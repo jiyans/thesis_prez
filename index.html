@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="./packages/reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/reveal.css"/>
 
-<link rel="stylesheet" href="./packages/reveal.js/css/theme/Black.css" id="theme"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/theme/Black.css" id="theme"/>
 
 <link rel="stylesheet" href="html/custom.css"/>
 
@@ -19,7 +19,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = './packages/reveal.js/css/print/pdf.css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -35,19 +35,19 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgdd8b9fc">目的</a></li>
-<li><a href="#/slide-orgcc93a3f">手法</a></li>
-<li><a href="#/slide-org75430c4">進捗</a></li>
-<li><a href="#/slide-org3942643">問題点</a></li>
-<li><a href="#/slide-org4625c71">Appendix</a></li>
+<li><a href="#/slide-orgfb46316">目的</a></li>
+<li><a href="#/slide-org770b5c2">手法</a></li>
+<li><a href="#/slide-org697f722">進捗</a></li>
+<li><a href="#/slide-org81887dd">問題点</a></li>
+<li><a href="#/slide-orgb33a940">Appendix</a></li>
 </ul>
 </div>
 </div>
 </section>
 
 <section>
-<section id="slide-orgdd8b9fc">
-<h2 id="orgdd8b9fc">目的</h2>
+<section id="slide-orgfb46316">
+<h2 id="orgfb46316">目的</h2>
 <aside class="notes">
 <ul>
 <li>僕たちが頂いている位置情報データだけを使って</li>
@@ -67,8 +67,8 @@
 位置情報のみ使って個人の特徴の抽出したい
 </p>
 </section>
-<section id="slide-org5a0b3f1">
-<h3 id="org5a0b3f1">現状</h3>
+<section id="slide-org1cbea3b">
+<h3 id="org1cbea3b">現状</h3>
 <aside class="notes">
 <ul>
 <li>例えば時系列の全データポイントの間の距離を計算して、その距離を全部足したらその期間内で移動した距離がわかる</li>
@@ -98,8 +98,8 @@
 </ul>
 
 </section>
-<section id="slide-orgd453a29">
-<h3 id="orgd453a29">考察</h3>
+<section id="slide-orgc7ff9c9">
+<h3 id="orgc7ff9c9">考察</h3>
 <aside class="notes">
 <ul>
 <li>あれのやりたいことって、</li>
@@ -120,8 +120,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgcc93a3f">
-<h2 id="orgcc93a3f">手法</h2>
+<section id="slide-org770b5c2">
+<h2 id="org770b5c2">手法</h2>
 <ul>
 <li>計算の手法である Persistent Homology を使用</li>
 <li>全員の Topological Features(位相的特徴？）を計算</li>
@@ -129,8 +129,8 @@
 
 </ul>
 </section>
-<section id="slide-org8d030b4">
-<h4 id="org8d030b4">Topological Feature とは</h4>
+<section id="slide-org374c65a">
+<h4 id="org374c65a">Topological Feature とは</h4>
 <aside class="notes">
 <ul>
 <li>顕著に出ているポイントが三つある</li>
@@ -150,8 +150,8 @@
 
 </ul>
 </section>
-<section id="slide-org52819a0">
-<h4 id="org52819a0">Topological Feature とは</h4>
+<section id="slide-orgb06bdce">
+<h4 id="orgb06bdce">Topological Feature とは</h4>
 <aside class="notes">
 <ul>
 <li>顕著に出ているポイントが三つある</li>
@@ -165,18 +165,18 @@
 </section>
 </section>
 <section>
-<section id="slide-org75430c4">
-<h2 id="org75430c4">進捗</h2>
+<section id="slide-org697f722">
+<h2 id="org697f722">進捗</h2>
 <p>
 現在の進捗状況は以下の通り
 </p>
 </section>
-<section id="slide-org0939cab">
-<h3 id="org0939cab">位置情報</h3>
+<section id="slide-orgc26fbe4">
+<h3 id="orgc26fbe4">位置情報</h3>
 <iframe src="html/latlons.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
-<section id="slide-org3cf7335">
-<h3 id="org3cf7335">Persistence diagram</h3>
+<section id="slide-org900973a">
+<h3 id="org900973a">Persistence diagram</h3>
 <aside class="notes">
 <ul>
 <li>顕著に出ているポイントが三つある</li>
@@ -188,22 +188,22 @@
 
 <iframe src="html/persiag1.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
-<section id="slide-org3d53303">
-<h3 id="org3d53303">Class 62</h3>
+<section id="slide-orgbc75be5">
+<h3 id="orgbc75be5">Class 62</h3>
 <iframe src="html/classrep62.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
-<section id="slide-org7bca4ca">
-<h3 id="org7bca4ca">Class 6</h3>
+<section id="slide-org369aa1b">
+<h3 id="org369aa1b">Class 6</h3>
 <iframe src="html/classrep6.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
-<section id="slide-orgd003022">
-<h3 id="orgd003022">Class 61</h3>
+<section id="slide-orgfcabdd8">
+<h3 id="orgfcabdd8">Class 61</h3>
 <iframe src="html/classrep61.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
 </section>
 <section>
-<section id="slide-org3942643">
-<h2 id="org3942643">問題点</h2>
+<section id="slide-org81887dd">
+<h2 id="org81887dd">問題点</h2>
 <ul>
 <li>時間の軸も考慮したい</li>
 <li>計算量が多い</li>
@@ -215,26 +215,26 @@
 </section>
 </section>
 <section>
-<section id="slide-org4625c71">
-<h2 id="org4625c71">Appendix</h2>
-<div class="outline-text-2" id="text-org4625c71">
+<section id="slide-orgb33a940">
+<h2 id="orgb33a940">Appendix</h2>
+<div class="outline-text-2" id="text-orgb33a940">
 </div>
 </section>
-<section id="slide-org3e85b94">
-<h3 id="org3e85b94">参考文献</h3>
+<section id="slide-org2bc4752">
+<h3 id="org2bc4752">参考文献</h3>
 <ul>
 <li><a href="https://towardsdatascience.com/persistent-homology-with-examples-1974d4b9c3d0">https://towardsdatascience.com/persistent-homology-with-examples-1974d4b9c3d0</a></li>
 
 </ul>
 </section>
-<section id="slide-org86c9b07">
-<h3 id="org86c9b07">Barcode diagram</h3>
+<section id="slide-org2910f09">
+<h3 id="org2910f09">Barcode diagram</h3>
 <iframe src="html/barcode.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
 </section>
 </div>
 </div>
-<script src="./packages/reveal.js/js/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/js/reveal.js"></script>
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
@@ -260,11 +260,11 @@ transitionSpeed: 'default',
 
 // Optional libraries used to extend reveal.js
 dependencies: [
- { src: './packages/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './packages/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './packages/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: './packages/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: './packages/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
 
 });
 </script>
