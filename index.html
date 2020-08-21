@@ -9,9 +9,11 @@
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/reveal.css"/>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/theme/Black.css" id="theme"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/theme/black.css" id="theme"/>
 
 <link rel="stylesheet" href="html/custom.css"/>
+
+<link rel="stylesheet" href="html/black.css"/>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -35,19 +37,19 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgfb46316">目的</a></li>
-<li><a href="#/slide-org770b5c2">手法</a></li>
-<li><a href="#/slide-org697f722">進捗</a></li>
-<li><a href="#/slide-org81887dd">問題点</a></li>
-<li><a href="#/slide-orgb33a940">Appendix</a></li>
+<li><a href="#/slide-orge6db81a">目的</a></li>
+<li><a href="#/slide-org2bcc8ff">手法</a></li>
+<li><a href="#/slide-org020ed41">進捗</a></li>
+<li><a href="#/slide-org2fead76">問題点</a></li>
+<li><a href="#/slide-orgeb6a106">Appendix</a></li>
 </ul>
 </div>
 </div>
 </section>
 
 <section>
-<section id="slide-orgfb46316">
-<h2 id="orgfb46316">目的</h2>
+<section id="slide-orge6db81a">
+<h2 id="orge6db81a">目的</h2>
 <aside class="notes">
 <ul>
 <li>僕たちが頂いている位置情報データだけを使って</li>
@@ -67,8 +69,8 @@
 位置情報のみ使って個人の特徴の抽出したい
 </p>
 </section>
-<section id="slide-org1cbea3b">
-<h3 id="org1cbea3b">現状</h3>
+<section id="slide-org5be057b">
+<h3 id="org5be057b">現状</h3>
 <aside class="notes">
 <ul>
 <li>例えば時系列の全データポイントの間の距離を計算して、その距離を全部足したらその期間内で移動した距離がわかる</li>
@@ -98,8 +100,8 @@
 </ul>
 
 </section>
-<section id="slide-orgc7ff9c9">
-<h3 id="orgc7ff9c9">考察</h3>
+<section id="slide-org1742a64">
+<h3 id="org1742a64">考察</h3>
 <aside class="notes">
 <ul>
 <li>あれのやりたいことって、</li>
@@ -120,8 +122,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org770b5c2">
-<h2 id="org770b5c2">手法</h2>
+<section id="slide-org2bcc8ff">
+<h2 id="org2bcc8ff">手法</h2>
 <ul>
 <li>計算の手法である Persistent Homology を使用</li>
 <li>全員の Topological Features(位相的特徴？）を計算</li>
@@ -129,8 +131,8 @@
 
 </ul>
 </section>
-<section id="slide-org374c65a">
-<h4 id="org374c65a">Topological Feature とは</h4>
+<section id="slide-org4feb131">
+<h4 id="org4feb131">Topological Feature とは</h4>
 <aside class="notes">
 <ul>
 <li>顕著に出ているポイントが三つある</li>
@@ -150,8 +152,8 @@
 
 </ul>
 </section>
-<section id="slide-orgb06bdce">
-<h4 id="orgb06bdce">Topological Feature とは</h4>
+<section id="slide-orgf8a989c">
+<h4 id="orgf8a989c">Topological Feature とは</h4>
 <aside class="notes">
 <ul>
 <li>顕著に出ているポイントが三つある</li>
@@ -165,18 +167,18 @@
 </section>
 </section>
 <section>
-<section id="slide-org697f722">
-<h2 id="org697f722">進捗</h2>
+<section id="slide-org020ed41">
+<h2 id="org020ed41">進捗</h2>
 <p>
 現在の進捗状況は以下の通り
 </p>
 </section>
-<section id="slide-orgc26fbe4">
-<h3 id="orgc26fbe4">位置情報</h3>
+<section id="slide-org455d22b">
+<h3 id="org455d22b">位置情報</h3>
 <iframe src="html/latlons.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
-<section id="slide-org900973a">
-<h3 id="org900973a">Persistence diagram</h3>
+<section id="slide-org25f244b">
+<h3 id="org25f244b">Persistence diagram</h3>
 <aside class="notes">
 <ul>
 <li>顕著に出ているポイントが三つある</li>
@@ -188,22 +190,22 @@
 
 <iframe src="html/persiag1.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
-<section id="slide-orgbc75be5">
-<h3 id="orgbc75be5">Class 62</h3>
+<section id="slide-org4c4feb6">
+<h3 id="org4c4feb6">Class 62</h3>
 <iframe src="html/classrep62.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
-<section id="slide-org369aa1b">
-<h3 id="org369aa1b">Class 6</h3>
+<section id="slide-org4f1ed42">
+<h3 id="org4f1ed42">Class 6</h3>
 <iframe src="html/classrep6.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
-<section id="slide-orgfcabdd8">
-<h3 id="orgfcabdd8">Class 61</h3>
+<section id="slide-org3b2fe50">
+<h3 id="org3b2fe50">Class 61</h3>
 <iframe src="html/classrep61.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
 </section>
 <section>
-<section id="slide-org81887dd">
-<h2 id="org81887dd">問題点</h2>
+<section id="slide-org2fead76">
+<h2 id="org2fead76">問題点</h2>
 <ul>
 <li>時間の軸も考慮したい</li>
 <li>計算量が多い</li>
@@ -215,20 +217,20 @@
 </section>
 </section>
 <section>
-<section id="slide-orgb33a940">
-<h2 id="orgb33a940">Appendix</h2>
-<div class="outline-text-2" id="text-orgb33a940">
+<section id="slide-orgeb6a106">
+<h2 id="orgeb6a106">Appendix</h2>
+<div class="outline-text-2" id="text-orgeb6a106">
 </div>
 </section>
-<section id="slide-org2bc4752">
-<h3 id="org2bc4752">参考文献</h3>
+<section id="slide-org2317d03">
+<h3 id="org2317d03">参考文献</h3>
 <ul>
 <li><a href="https://towardsdatascience.com/persistent-homology-with-examples-1974d4b9c3d0">https://towardsdatascience.com/persistent-homology-with-examples-1974d4b9c3d0</a></li>
 
 </ul>
 </section>
-<section id="slide-org2910f09">
-<h3 id="org2910f09">Barcode diagram</h3>
+<section id="slide-orgb66c3ce">
+<h3 id="orgb66c3ce">Barcode diagram</h3>
 <iframe src="html/barcode.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
 </section>
 </section>
