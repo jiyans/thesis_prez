@@ -1,0 +1,110 @@
+#+Title: 位相幾何学を使った人間行動の解析
+#+Author: JIYAN JONAS SCHNEIDER
+#+Options: TOC:1
+#+Options: Num:nil date:nil author:nil reveal_progress:t reveal_keyboard:t
+#+REVEAL_ROOT: ./packages/reveal.js/
+#+REVEAL_THEME: Black
+#+REVEAL_EXTRA_CSS: html/custom.css
+#+REVEAL_TITLE_SLIDE: <h3>%t</h3>
+
+# #+REVEAL_TRANS: None/Fade/Slide/Convex/Concave/Zoom
+# #+REVEAL_THEME: Black/White/League/Sky/Beige/Simple/Serif/Blood/Night/Moon/Solarized
+
+* 目的
+#+BEGIN_NOTES
+- 僕たちが頂いている位置情報データだけを使って
+- データセットに入っている人たち全員の特徴を
+- 新しく作りたいと思っております
+- その新しい特徴は位相幾何学の理論を使って抽出したい
+
+どういうことか説明するために現状から話していこうと思っています
+#+END_NOTES
+
+  位置情報のみ使って個人の特徴の抽出したい
+** 現状
+#+BEGIN_NOTES
+ - 例えば時系列の全データポイントの間の距離を計算して、その距離を全部足したらその期間内で移動した距離がわかる
+ - 緯度の分散、軽度の分散、とその共分散の計算ができる
+ - それ以上知ろうとすると複雑になる
+ - このプレゼンで使うデータは左の通り
+ - 前に課題のために頂いたデータセットから一人を抽出した
+ - ちょっと見ていきましょう
+#+END_NOTES
+
+   
+  #+REVEAL_HTML: <div class="column" style="float:left; width: 50%">
+  #+REVEAL_HTML: <iframe src="html/map.html" width="350" height="500" frameborder="0" autosize="true"></iframe>
+  #+REVEAL_HTML: </div>
+  #+REVEAL_HTML: <div class="column" style="float:right; width: 50%">
+ - 例えば 1 日で移動した距離がわかる
+ - 分散もわかる
+ - それ以上知ろうとすると複雑になる
+  #+REVEAL_HTML: </div>
+  
+** 考察
+   
+#+BEGIN_NOTES
+- あれのやりたいことって、
+- 位置情報データを使って計算できるような、帰分析とかで使えるような新しい特徴の開発です
+- 例えばこの人はこういう風に動いててアクティブな人だよーっていうのを数値化したい、アクティブ指数みたいな感じのやつ
+- でも実際にその数値が使えるような例とかはまだ考えてないから最後にそういうのについてアドバイスとかが欲しいかも
+#+END_NOTES
+   
+ - だが行動の複雑さがわからない
+ - 「複雑さ」にも価値がある考えられる
+ - 抽出するために位相幾何学が使えると仮定
+* 手法
+ - 計算の手法である Persistent Homology を使用
+ - 全員の Topological Features(位相的特徴？）を計算
+ - それを何かの回帰とかで使って役に立つか検証
+*** Topological Feature とは
+#+BEGIN_NOTES
+- 顕著に出ているポイントが三つある
+- Group/Size Group ネームと Group サイズ
+#+END_NOTES
+#+Caption: Koplik (2019) see Appendix
+#+REVEAL_HTML: <iframe src="https://gjkoplik.github.io/pers-hom-examples/0d_pers_2d_data_widget.html" width="600" height="300" frameborder="0" autosize="true"></iframe>
+
+ - データを膨らませる
+ - 例えば図形の数、穴の数
+ - 多次元でもできる
+ - この手法で Betti Number が得られる
+ - 最終的にそれを特徴として使いたい
+*** Topological Feature とは
+#+BEGIN_NOTES
+- 顕著に出ているポイントが三つある
+- Group/Size Group ネームと Group サイズ
+#+END_NOTES
+#+Caption: Koplik (2019) see Appendix
+#+REVEAL_HTML: <iframe src="https://gjkoplik.github.io/pers-hom-examples/1d_pers_2d_data_widget.html" width="600" height="300" frameborder="0" autosize="true"></iframe>
+
+* 進捗
+  現在の進捗状況は以下の通り
+** 位置情報
+    #+REVEAL_HTML: <iframe src="html/latlons.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
+** Persistence diagram
+#+BEGIN_NOTES
+- 顕著に出ているポイントが三つある
+- Group/Size Group ネームと Group サイズ
+#+END_NOTES
+   
+    #+REVEAL_HTML: <iframe src="html/persiag1.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
+** Class 62
+    #+REVEAL_HTML: <iframe src="html/classrep62.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
+** Class 6
+   #+REVEAL_HTML: <iframe src="html/classrep6.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
+** Class 61
+   #+REVEAL_HTML: <iframe src="html/classrep61.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
+* 問題点
+ - 時間の軸も考慮したい
+ - 計算量が多い
+ - データのサンプリングが不定期
+   → 有意差？が出ない可能性がある
+ - データセットは使用可能か？
+ - もしもっと大きなデータセットだったらここの心配はなくなるかも
+* Appendix
+** 参考文献
+  - https://towardsdatascience.com/persistent-homology-with-examples-1974d4b9c3d0
+** Barcode diagram
+    #+REVEAL_HTML: <iframe src="html/barcode.html" width="700" height="500" frameborder="0" autosize="true"></iframe>
+    
