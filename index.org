@@ -3,7 +3,7 @@
 #+Options: TOC:1
 #+Options: Num:nil date:nil author:nil reveal_progress:t reveal_keyboard:t
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
-#+REVEAL_EXTRA_CSS: html/custom.css
+# #+REVEAL_EXTRA_CSS: html/custom.css
 #+REVEAL_EXTRA_CSS: html/black.css
 #+REVEAL_TITLE_SLIDE: <h3>%t</h3>
 
